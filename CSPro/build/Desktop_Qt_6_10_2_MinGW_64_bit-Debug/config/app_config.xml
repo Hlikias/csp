@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+    <!-- 样式配置 -->
+    <Style>
+        <!-- QSS文件路径：支持绝对路径/资源路径 -->
+        <LoginQssPath>qss/login_style.qss</LoginQssPath>
+        <MainQssPath>qss/main_style.qss</MainQssPath>
+        <!-- 可选：全局QSS路径 -->
+        <GlobalQssPath>qss/global_style.qss</GlobalQssPath>
+        <SettingQssPath>qss/server_setting.qss</SettingQssPath>
+    </Style>
+
+    <!-- 用户配置 -->
+    <ConfigPath>
+        <UserConfigPath>config/user_config.xml</UserConfigPath> <!-- 相对路径，也可写绝对路径/资源路径 -->
+        <ServerConfigPath>config/server_config.xml</ServerConfigPath>
+    </ConfigPath>
+
+    <!-- 软件基础配置 -->
+    <App>
+        <WindowWidth>400</WindowWidth>
+        <WindowHeight>550</WindowHeight>
+        <Title>QQ登录界面</Title>
+        <AutoStart>false</AutoStart>
+        <Language>zh_CN</Language>
+    </App>
+</AppConfig>

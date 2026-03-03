@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerConfig>
+<Network>
+    <Host>0.0.0.0</Host>
+    <Port>8080</Port>
+    <MaxConnections>100,500,1000</MaxConnections>
+    <WorkerThreads>1,2,4</WorkerThreads>
+    <ConnectionTimeout>10000,30000,50000</ConnectionTimeout>
+</Network>
+<Resource>
+    <MaxUsers>500</MaxUsers>
+    <BufferSize>8192</BufferSize>
+    <SessionTimeout>1800</SessionTimeout>
+    <MemoryLimitMB>1024</MemoryLimitMB>  <!-- 注意去掉单位，纯数字 -->
+</Resource>
+<Log>
+    <Level>debug,info,warning,error</Level>
+    <File>./server.log</File>
+    <MaxSize>10485760</MaxSize>
+    <MaxBackups>5</MaxBackups>
+</Log>
+<Business>
+    <AllowGuest>Guest,Administrator,Developer</AllowGuest>  <!-- 注意键名重复问题已修复 -->
+    <EncryptData>Hash</EncryptData>
+    <UploadPath>./uploads</UploadPath>
+    <DownloadPath>./downloads</DownloadPath>
+    <MessageRetentionDays>30</MessageRetentionDays>
+</Business>
+</ServerConfig>

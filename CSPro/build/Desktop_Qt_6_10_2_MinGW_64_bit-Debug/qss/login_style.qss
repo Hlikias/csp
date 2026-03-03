@@ -1,0 +1,278 @@
+/* ========== 1. 整体窗口样式 ========== */
+#loginWindow {
+    /* 渐变背景（模拟QQ的淡蓝渐变） */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                                stop:0 #E8F4FF, stop:1 #D1E9FF);
+    /* 去掉窗口边框（可选，模拟QQ无边框） */
+    border: none;
+    border-radius: 5px;
+}
+
+/* ========== 2. QQ头像样式 ========== */
+#lblAvatar {
+    /* 头像大小 */
+    width: 100px;
+    height: 100px;
+    /* 圆形头像（关键：border-radius设为宽高的一半） */
+    border-radius: 50px;
+    /* 头像边框（浅灰色细边框） */
+    border: 2px solid #F0F0F0;
+    /* 头像图片填充方式（居中+等比例缩放） */
+    background-origin: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 居中显示（配合布局，也可在代码中设置对齐） */
+    margin: 30px auto;
+    
+}
+
+/* ========== 3. 输入框通用样式（QQ号/密码框） ========== */
+/* ========== 公共样式（适用于 QComboBox 和 QLineEdit） ========== */
+#leQQNum, #leQQPwd {
+    /* 输入框大小和边距 */
+    min-width: 250px;
+    max-width: 250px;
+    height: 41px;
+
+
+    /* 边框样式（圆角+浅灰色边框） */
+    border: 1px solid #DCDFE6;
+    border-radius: 5px;
+
+    /* 背景色（白色半透明） */
+    background-color: rgba(255, 255, 255, 0.8);
+
+    /* 文字样式（注意：QComboBox 的文字由内部控件控制，但会继承） */
+    font-size: 16px;
+    color: #333333;
+
+    /* 内边距（为右侧箭头留空间，左右一致） */
+    padding-left: 5px;
+    padding-right: 5px;      /* 对于 QComboBox，需要额外为箭头留空间，后面单独调整 */
+}
+
+/* ========== QComboBox 特有样式（覆盖/补充） ========== */
+#leQQNum {
+    min-width: 250px;
+    max-width: 250px;
+    /* 调整右侧内边距，为箭头按钮留出更多空间（因为下拉按钮会占用一部分） */
+    /*padding-right: 5px;     给箭头按钮留出足够空间，避免文字与箭头重叠 */
+}
+
+/* 下拉按钮（右侧箭头区域） */
+#leQQNum::drop-down {
+    subcontrol-origin: padding;    /* 从 padding 区域开始 */
+    subcontrol-position: center right; /* 位于右侧中间 */
+    width: 35px;                   /* 按钮宽度，可根据实际调整 */
+    border-top-right-radius: 5px;   /* 右上圆角（与整体圆角匹配） */
+    border-bottom-right-radius: 5px;/* 右下圆角 */
+    /* background-color:  #f0f0f0; 背景透明，或使用浅色 */
+}
+
+/* 下拉箭头图标（默认是系统风格，也可自定义图片） */
+#leQQNum::down-arrow {
+    /* 如果有资源，用图片；否则去掉这行image: url(:/icons/arrow-down.png);  */
+    width: 16px;
+    height: 16px;
+}
+
+/* 内部输入框（仅当 QComboBox 可编辑时有效） */
+#leQQNum QLineEdit {
+    /* 去除内部边框，避免叠加 */
+    border: none;
+    background: transparent;
+    /* 继承父控件的字体颜色，但对齐方式需在代码中设置 */
+   padding-left: 18px;    /* 根据需要调整 */
+   padding-right: 2px;
+}
+
+/* 下拉列表容器 */
+#leQQNum QAbstractItemView {
+    border: 1px solid #DCDFE6;
+    border-radius: 8px;
+    background-color: white;
+    outline: none;
+    min-width: 250px;
+    max-width: 250px;
+    
+}
+
+/* 列表项 */
+#leQQNum QAbstractItemView::item {
+    min-width: 250px;
+    max-width: 250px;    
+    min-height: 36px;
+    padding-left: 12px;    /* 文字左缩进 */
+    padding-right: 12px;   /* 文字右缩进 */
+    font-size: 14px;
+    color: #333333;
+    border-radius: 8px;
+    margin: 3px 0;         /* 仅保留上下间距，左右占满 */
+    background-color: transparent;
+
+}
+
+/* 鼠标悬停时的项 */
+#leQQNum QAbstractItemView::item:hover {
+    background-color: #F0F0F0;          /* 浅灰色背景 */
+    color: #333333;
+}
+
+/* 选中的项（高亮） */
+#leQQNum QAbstractItemView::item:selected {
+    background-color: #409EFF;          /* 蓝色背景（QQ蓝） */
+    color: white;
+}
+
+/* 如果选中的项同时处于悬停状态，可以额外定义 */
+#leQQNum QAbstractItemView::item:selected:hover {
+    background-color: #3388FF;          /* 稍微深一点的蓝 */
+}
+
+
+
+/* 输入框聚焦样式（高亮边框） */
+#leQQNum:focus, #leQQPwd:focus {
+    border-color: #409EFF;
+    outline: none; /* 去掉默认的聚焦外框 */
+}
+/* 输入框占位符文字样式 */
+#leQQNum::placeholder, #leQQPwd::placeholder {
+    color: #C0C4CC;
+    font-size: 14px;
+}
+
+/* ========== 4. 单选框样式（自动登录/记住密码/协议勾选） ========== */
+/* 通用单选框样式 */
+QRadioButton {
+    font-size: 14px;
+    color: #666666;
+}
+/* 单选框圆形按钮样式 */
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px; /* 圆形 */
+    border: 1px solid #DCDFE6;
+    background-color: white;
+}
+/* 单选框选中状态 */
+QRadioButton::indicator:checked {
+    background-color: #409EFF;
+    border-color: #409EFF;
+    /* 选中后的小原点 */
+    image: url(:/images/radio_check.png); /* 可选：加个白色小原点图片，也可通过伪元素实现 */
+}
+/* 协议勾选框单独调整位置 */
+#rbtnAgree {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/* ========== 5. 登录按钮样式 ========== */
+#btnLogin {
+    min-width: 265px;
+    max-width: 265px;
+    height: 41px;
+    /* 渐变背景（QQ蓝） */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                                stop:0 #409EFF, stop:1 #3388FF);
+    /* 圆角 */
+    border-radius: 10px;
+    border: none;
+    /* 文字样式 */
+    font-size: 16px;
+    color: white;
+}
+/* 按钮按下状态 */
+#btnLogin:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                                stop:0 #3388FF, stop:1 #2677EE);
+}
+/* 按钮禁用状态（可选） */
+#btnLogin:disabled {
+    background: #C0C4CC;
+    color: #999999;
+}
+
+/* ========== 6. 文字链接样式（服务协议/隐私指引/扫码登录/注册账号） ========== */
+/* 通用链接文字 */
+#lblService, #lblPrivacy, #lblScanLogin, #lblRegister {
+    font-size: 14px;
+    color: #409EFF; /* 链接蓝色 */
+    text-decoration: none; /* 去掉下划线（可选，QQ原版无下划线） */
+    margin: 1px;
+}
+/* ========== 鼠标悬停效果 ========== */
+#lblService:hover, #lblPrivacy:hover, #lblScanLogin:hover, #lblRegister:hover {
+    color: #66b1ff;                /* 亮蓝色，增加视觉反馈 */
+    text-decoration: underline;    /* 加下划线，模拟超链接 */
+}
+
+/* ========== 鼠标按下效果 ========== */
+#lblService:pressed, #lblPrivacy:pressed, #lblScanLogin:pressed, #lblRegister:pressed {
+    color: #3377aa;                /* 深蓝色，模拟按下 */
+    text-decoration: underline;     /* 保持下划线（可选） */
+}
+/* 扫码/注册文字位置调整 */
+#lblScanLogin, #lblRegister {
+    font-size: 13px;
+    margin: 0 10px;
+}
+/* 协议行容器（可选：如果用QLabel包裹协议文字） */
+#lblAgreeText {
+    font-size: 12px;
+    color: #666666;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* ========== 7. 右上角菜单/关闭按钮（可选） ========== */
+/* 菜单按钮 */
+#btnMenu {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #666666;
+}
+/* 关闭按钮 */
+#btnClose {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #666666;
+}
+#btnClose:hover {
+    color: #F56C6C; /* hover变红 */
+}
+
+
+
+#closeBtn, #minBtn{
+    border: none;
+    border-radius: 20px;          /* 胶囊形状，也可改为较小值 */
+}
+
+/* ========== 鼠标悬停 ========== */
+#closeBtn, #minBtn:hover {
+    /* 背景颜色加深 */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #3388FF,
+                                stop:1 #2677EE);
+}
+
+/* ========== 鼠标按下 ========== */
+#closeBtn, #minBtn:pressed {
+    /* 背景更暗，模拟按下 */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2677EE,
+                                stop:1 #1A66DD)
+}
+
+/* ========== 禁用状态 ========== */
+#closeBtn, #minBtn:disabled {
+    /* 变灰 */
+    background: #C0C4CC;
+    color: #999999;
+}
+
