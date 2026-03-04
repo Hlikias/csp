@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QFile>
-
+#include "xmlmanager.h"
 #include <QFileInfo>
 #include <QValidator>
 #include <QRegularExpression>
@@ -30,6 +30,8 @@ class ServerSetting : public QWidget
 public:
     explicit ServerSetting(QWidget *parent = nullptr);
     ~ServerSetting();
+    QMap<QString, serverConfig> getServerConfig();
+    serverParam get_ServerParam();
 
 private:
     void loadLocalQss(const QString &qssPath);
@@ -39,8 +41,9 @@ private:
     bool eventFilter(QObject *obj, QEvent *event);
 private:
     Ui::ServerSetting *ui;
-private:
+    QMap<QString, serverConfig> serversMap;
     IPValidator *validator;
+    serverParam param;
 };
 
 

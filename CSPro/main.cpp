@@ -5,6 +5,7 @@
 #include <QTranslator>
 #include "xmlmanager.h"
 #include <QDebug>
+/**/
 bool loadStyleSheet(QWidget *, const QString &);
 void loadGlobalQss(const QString &);
 int main(int argc, char *argv[])
@@ -26,6 +27,8 @@ int main(int argc, char *argv[])
         qCritical() << "配置初始化失败，程序退出";
         return -1;
     }
+
+    a.setWindowIcon(QIcon("pic/icon.ico"));  // 从资源文件加载
     CSproject w;
 
     w.show();

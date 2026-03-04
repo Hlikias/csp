@@ -49,7 +49,6 @@ bool xmlmanager::init(const QString& xml_path)
         // 此处返回true，避免用户配置不存在导致程序退出
         return true;
     }
-
     qInfo() << "[xmlmanager] 主配置+用户配置加载完成，共" << m_config_map.count() << "项";
     return true;
 }

@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Network Xml)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Network Xml)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Network Xml Charts)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Network Xml Charts)
 
 set(TS_FILES CSPro_zh_CN.ts)
 
@@ -35,6 +35,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         xmlmanager.h xmlmanager.cpp
         resources.qrc
         serversetting.h serversetting.cpp serversetting.ui
+        dashboardwidget.h dashboardwidget.cpp dashboardwidget.ui
+        systemmonitor.h systemmonitor.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET CSPro APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -62,7 +64,12 @@ target_link_libraries(CSPro PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Network
     Qt${QT_VERSION_MAJOR}::Xml
+    Qt${QT_VERSION_MAJOR}::Charts
 )
+
+if(WIN32)
+    target_link_libraries(CSPro PRIVATE Pdh.lib)
+endif()
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

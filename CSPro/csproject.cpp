@@ -127,7 +127,8 @@ void CSproject::createMainArea()
     } else {
         // 2. 创建托盘图标对象，并设置图标（请确保图标文件存在于你的资源中）
         m_trayIcon = new QSystemTrayIcon(this);
-        m_trayIcon->setIcon(QIcon::fromTheme("application-exit", QIcon(":/fallback.png")));
+        m_trayIcon->setIcon(QIcon("pic/icon.ico"));
+        //m_trayIcon->setIcon(QIcon::fromTheme("application-exit", QIcon(":/fallback.png")));
         // 或使用样式表图标（较麻烦）
         m_trayIcon->setToolTip("CSProject"); // 鼠标悬停时显示的提示
 
@@ -306,13 +307,15 @@ void CSproject::on_loadButton_clicked()
 {
     this->hide();
 }
+
 void CSproject::on_btnLogin_clicked()
 {
     if(validateBothEmpty())
     {
-        this->m_serverWidget = new serverwidget();
+        this->m_serverWidget = new serverwidget(m_expandWidget->get_ServerParam());
         m_serverWidget->setWindowFlags(Qt::FramelessWindowHint | Qt::Window);
         this->hide();
+
         m_serverWidget->show();
     }
 }
@@ -332,7 +335,6 @@ void CSproject::on_minBtn_clicked()
 {
     QCoreApplication::exit(0);
 }
-
 
 void CSproject::changeEvent(QEvent *event)
 {
@@ -413,14 +415,14 @@ bool CSproject::eventFilter(QObject *obj, QEvent *event)
     }
     return QMainWindow::eventFilter(obj, event);
 }
+
+
 bool CSproject::validateBothEmpty() const
 {
     QString account = ui->leQQNum->currentText().trimmed();
     QString password = ui->leQQPwd->text().trimmed();
     return !account.isEmpty() && !password.isEmpty();  // 两者都为空返回 true
 }
-
-
 
 bool CSproject::openUrlWithRegistry(const QString &url)
 {

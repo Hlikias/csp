@@ -22,6 +22,7 @@ class CSproject;
 }
 QT_END_NAMESPACE
 
+
 class CSproject : public QMainWindow
 {
     Q_OBJECT
@@ -40,8 +41,6 @@ private:
     void init();
 
     bool openUrlWithRegistry(const QString &url);
-private:
-    Ui::CSproject *ui;
 
 private slots:
     // 切换展开/收起状态
@@ -60,18 +59,23 @@ private slots:
     void on_minBtn_clicked();
 
     void on_leQQNum_currentTextChanged(const QString &arg1);
-
+signals:
+    void emit_serverConfig(const serverParam &param);
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
+
     // 重写 closeEvent 来处理窗口关闭按钮（叉号）的行为
     void closeEvent(QCloseEvent *event) override;
     // 重写 changeEvent 来检测窗口最小化事件
     void changeEvent(QEvent *event) override;
     // 标签
     bool eventFilter(QObject *obj, QEvent *event) override;
+
+
 private:
+    Ui::CSproject *ui;
     int m_originalWidth;      // 原窗口/主区域宽度（300px）
     int m_targetWidth;        // 扩展后总宽度（800px）
     bool m_isExpanded;         // 是否展开
@@ -90,5 +94,6 @@ private:
     QMenu *m_trayMenu;            // 托盘右键菜单
     bool loadCompleted;
     QString m_lastQQ;  // 上一次选中的QQ号
+
 };
 #endif // CSPROJECT_H

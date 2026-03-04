@@ -1,6 +1,6 @@
 #include "serversetting.h"
 #include "ui_serversetting.h"
-#include "xmlmanager.h"
+
 #include <QDebug>
 #include <QFileDialog>
 ServerSetting::ServerSetting(QWidget *parent)
@@ -17,9 +17,37 @@ ServerSetting::~ServerSetting()
     delete ui;
 
 }
+
+QMap<QString, serverConfig> ServerSetting::getServerConfig()
+{
+    return this->serversMap;
+}
+
+serverParam ServerSetting::get_ServerParam()
+{
+    param.m_host = ui->host->text();
+    param.m_port = ui->port->text().toUInt();
+    param.m_maxConnectionsOptions = ui->maxConnections->currentText().toUInt();
+    param.m_workerThreadsOptions = ui->workerThreads->currentText().toUInt();
+    param.m_timeoutOptions = ui->connectionTimeout->currentText().toUInt();
+    param.m_maxUsers = ui->maxUsers->text().toUInt();
+    param.m_bufferSize = ui->bufferSize->text().toUInt();
+    param.m_sessionTimeout = ui->sessionTimeout->text().toUInt();
+    param.m_memoryLimitMB = ui->memoryLimitMB->text().toUInt();
+    param.m_logLevelOptions = ui->logLevel->currentText();
+    param.m_logFile = ui->logPath->text();
+    param.m_logMaxSize = ui->filemaxSize->text().toUInt();
+    param.m_logMaxBackups = ui->maxBackups->text().toUInt();
+    param.m_allowGuestOptions = ui->allowGuest->currentText();
+    param.m_encryptData = ui->encryptData->currentText();
+    param.m_uploadPath = ui->uploadPath->text();
+    param.m_downloadPath = ui->downloadPath->text();
+    param.m_messageRetentionDays = 30;
+    return this->param;
+}
 void ServerSetting::initUI(){
     xmlmanager& xml_mgr = xmlmanager::getinstance();
-    QMap<QString, serverConfig> serversMap = xml_mgr.getServerInfoMap();
+    serversMap = xml_mgr.getServerInfoMap();
     serverConfig server = serversMap["main"];
     validator = new IPValidator(this);
     ui->host->setValidator(validator);

@@ -5,6 +5,12 @@
 #include <QTabBar>
 #include <QPainter>
 #include <QStyleOptionTab>
+#include <QMouseEvent>
+#include <QSystemTrayIcon>
+#include <QMenu>
+#include <QAction>
+#include "dashboardwidget.h"
+#include "xmlmanager.h"
 namespace Ui {
 class serverwidget;
 }
@@ -14,56 +20,42 @@ class serverwidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit serverwidget(QWidget *parent = nullptr);
+    explicit serverwidget(const serverParam &param,QWidget *parent = nullptr);
     ~serverwidget();
 
+    void loadLocalQss(const QString &qssPath);
 private:
     Ui::serverwidget *ui;
-};
-
-// 自定义TabBar：取消文字旋转，保持水平/或自定义旋转方向
-class NoRotateTabBar : public QTabBar
-{
 protected:
-    void paintEvent(QPaintEvent *event) override
-    {
-        QPainter painter(this);
-        for (int i = 0; i < count(); ++i) {
-            QStyleOptionTab tabOption;
-            initStyleOption(&tabOption, i);
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
+    void closeEvent(QCloseEvent *event) override;
 
-            // 1. 绘制标签背景（保留原生样式）
-            style()->drawControl(QStyle::CE_TabBarTab, &tabOption, &painter, this);
+    void init();
+    void initTray();  //初始化最小托盘
+private slots:
+    void on_closeBtn_clicked();
+    void onMinimizeToTray();          // 最小化到托盘的槽函数
+    void onTrayIconActivated(QSystemTrayIcon::ActivationReason reason); // 托盘图标激活
+    void onShowWindow();  // 显示窗口
+    void onQuitApp();   // 退出程序
 
-            // 2. 绘制文字：取消默认旋转，自定义显示方式
-            painter.save();
+    void on_mainBtn_clicked();
+public slots:
 
-            QRect textRect = tabRect(i);
-            textRect.adjust(5, 5, -5, -5); // 留边距避免文字贴边
 
-            // ========== 方案1：文字完全水平（推荐） ==========
-            painter.drawText(textRect, Qt::AlignCenter, tabOption.text);
+private:
+    bool m_dragging = false;  // 是否正在拖动
+    QPoint m_dragPosition;    // 记录鼠标按下时的位置
 
-            // ========== 方案2：文字逆时针旋转90度（可选） ==========
-            // painter.translate(textRect.center()); // 移动到文字区域中心
-            // painter.rotate(-90); // 逆时针旋转90度（区别于默认的顺时针）
-            // painter.drawText(QRect(-textRect.width()/2, -textRect.height()/2,
-            //                        textRect.width(), textRect.height()),
-            //                 Qt::AlignCenter, tabOption.text);
+    QSystemTrayIcon *m_trayIcon; // 托盘图标对象
+    QMenu *m_trayMenu; // 托盘菜单
+    QAction *m_showAction; // 显示窗口动作
+    QAction *m_quitAction; // 退出程序动作
 
-            painter.restore();
-        }
-    }
-
-    // 自定义标签大小：适配左侧水平文字
-    QSize tabSizeHint(int index) const override
-    {
-        QSize size = QTabBar::tabSizeHint(index);
-        // 宽度足够容纳水平文字，高度适中
-        size.setWidth(100);  // 水平文字需要的宽度
-        size.setHeight(60);  // 标签高度
-        return size;
-    }
+    DashboardWidget *m_dashBoarWidget;
+    serverParam param;
 };
 
 #endif // SERVERWIDGET_H

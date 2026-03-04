@@ -51,6 +51,34 @@ struct serverConfig
     QString downloadPath;
     int messageRetentionDays;
 };
+
+struct serverParam{
+    // Network
+    QString m_host;
+    int m_port;
+    int m_maxConnectionsOptions;  // 存储多个可选值
+    int m_workerThreadsOptions;
+    int m_timeoutOptions;
+
+    // Resource
+    int m_maxUsers;
+    int m_bufferSize;
+    int m_sessionTimeout;
+    int m_memoryLimitMB;   // 去掉单位，存数字
+
+    // Log
+    QString m_logLevelOptions;       // debug,info,warning,error
+    QString m_logFile;
+    int m_logMaxSize;
+    int m_logMaxBackups;
+
+    // Business
+    QString m_allowGuestOptions;     // Guest,Administrator,Developer
+    QString m_encryptData;               // Hash 或其他
+    QString m_uploadPath;
+    QString m_downloadPath;
+    int m_messageRetentionDays;
+};
 class xmlmanager : public QObject
 {
     Q_OBJECT // 必须添加Q_OBJECT宏，支持信号槽/元对象系统
