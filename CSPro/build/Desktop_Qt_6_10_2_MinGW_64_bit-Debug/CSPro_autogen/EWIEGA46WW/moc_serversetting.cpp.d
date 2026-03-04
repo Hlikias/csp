@@ -1,8 +1,16 @@
 D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/EWIEGA46WW/moc_serversetting.cpp: D:/QtPro/CSPro/serversetting.h \
   D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/moc_predefs.h \
+  D:/QtPro/CSPro/xmlmanager.h \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QDateTime \
   F:/qt/6.10.2/mingw_64/include/QtCore/QFile \
   F:/qt/6.10.2/mingw_64/include/QtCore/QFileInfo \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QMap \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QMutex \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QObject \
   F:/qt/6.10.2/mingw_64/include/QtCore/QRegularExpression \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QString \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QVariant \
+  F:/qt/6.10.2/mingw_64/include/QtCore/QXmlStreamReader \
   F:/qt/6.10.2/mingw_64/include/QtCore/q17memory.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/q20functional.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/q20iterator.h \
@@ -42,6 +50,7 @@ D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/EWIEGA46
   F:/qt/6.10.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qdatastream.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qdatetime.h \
+  F:/qt/6.10.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qdebug.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qendian.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -74,6 +83,7 @@ D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/EWIEGA46
   F:/qt/6.10.2/mingw_64/include/QtCore/qmetacontainer.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qmetatype.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qminmax.h \
+  F:/qt/6.10.2/mingw_64/include/QtCore/qmutex.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qnamespace.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qnumeric.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qobject.h \
@@ -127,6 +137,7 @@ D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/EWIEGA46
   F:/qt/6.10.2/mingw_64/include/QtCore/qtnoop.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qtpreprocessorsupport.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qtresource.h \
+  F:/qt/6.10.2/mingw_64/include/QtCore/qtsan_impl.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qttranslation.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qttypetraits.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qtversion.h \
@@ -137,6 +148,7 @@ D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CSPro_autogen/EWIEGA46
   F:/qt/6.10.2/mingw_64/include/QtCore/qvariant.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qvarlengtharray.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qversiontagging.h \
+  F:/qt/6.10.2/mingw_64/include/QtCore/qxmlstream.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qxptype_traits.h \
   F:/qt/6.10.2/mingw_64/include/QtCore/qyieldcpu.h \
   F:/qt/6.10.2/mingw_64/include/QtGui/QValidator \

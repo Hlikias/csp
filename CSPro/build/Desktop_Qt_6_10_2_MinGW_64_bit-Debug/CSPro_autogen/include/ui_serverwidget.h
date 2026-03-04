@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -27,11 +28,13 @@ class Ui_serverwidget
 public:
     QHBoxLayout *horizontalLayout_3;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_8;
+    QLabel *titleLabel;
+    QPushButton *mainBtn;
+    QPushButton *userBtn;
+    QPushButton *settingBtn;
+    QPushButton *serviceBtn;
+    QPushButton *logBtn;
+    QPushButton *monitoringBtn;
     QSpacerItem *verticalSpacer;
     QFrame *line;
     QHBoxLayout *horizontalLayout;
@@ -42,11 +45,10 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_10;
+    QPushButton *minBtn;
+    QPushButton *closeBtn;
     QStackedWidget *stackedWidget;
-    QWidget *page;
-    QWidget *page_2;
+    QButtonGroup *buttonGroup;
 
     void setupUi(QWidget *serverwidget)
     {
@@ -55,36 +57,61 @@ public:
         serverwidget->resize(696, 580);
         horizontalLayout_3 = new QHBoxLayout(serverwidget);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(0);
         verticalLayout->setObjectName("verticalLayout");
-        pushButton_2 = new QPushButton(serverwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setStyleSheet(QString::fromUtf8(""));
+        titleLabel = new QLabel(serverwidget);
+        titleLabel->setObjectName("titleLabel");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(titleLabel);
 
-        pushButton_3 = new QPushButton(serverwidget);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setStyleSheet(QString::fromUtf8(""));
+        mainBtn = new QPushButton(serverwidget);
+        buttonGroup = new QButtonGroup(serverwidget);
+        buttonGroup->setObjectName("buttonGroup");
+        buttonGroup->addButton(mainBtn);
+        mainBtn->setObjectName("mainBtn");
+        mainBtn->setStyleSheet(QString::fromUtf8(""));
+        mainBtn->setCheckable(true);
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(mainBtn);
 
-        pushButton = new QPushButton(serverwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setStyleSheet(QString::fromUtf8(""));
+        userBtn = new QPushButton(serverwidget);
+        buttonGroup->addButton(userBtn);
+        userBtn->setObjectName("userBtn");
+        userBtn->setStyleSheet(QString::fromUtf8(""));
+        userBtn->setCheckable(true);
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(userBtn);
 
-        pushButton_7 = new QPushButton(serverwidget);
-        pushButton_7->setObjectName("pushButton_7");
+        settingBtn = new QPushButton(serverwidget);
+        buttonGroup->addButton(settingBtn);
+        settingBtn->setObjectName("settingBtn");
+        settingBtn->setStyleSheet(QString::fromUtf8(""));
+        settingBtn->setCheckable(true);
 
-        verticalLayout->addWidget(pushButton_7);
+        verticalLayout->addWidget(settingBtn);
 
-        pushButton_8 = new QPushButton(serverwidget);
-        pushButton_8->setObjectName("pushButton_8");
+        serviceBtn = new QPushButton(serverwidget);
+        buttonGroup->addButton(serviceBtn);
+        serviceBtn->setObjectName("serviceBtn");
+        serviceBtn->setCheckable(true);
 
-        verticalLayout->addWidget(pushButton_8);
+        verticalLayout->addWidget(serviceBtn);
+
+        logBtn = new QPushButton(serverwidget);
+        buttonGroup->addButton(logBtn);
+        logBtn->setObjectName("logBtn");
+        logBtn->setCheckable(true);
+
+        verticalLayout->addWidget(logBtn);
+
+        monitoringBtn = new QPushButton(serverwidget);
+        buttonGroup->addButton(monitoringBtn);
+        monitoringBtn->setObjectName("monitoringBtn");
+        monitoringBtn->setCheckable(true);
+
+        verticalLayout->addWidget(monitoringBtn);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
@@ -137,7 +164,9 @@ public:
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
         horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(2);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(-1, 5, 2, -1);
         label = new QLabel(serverwidget);
         label->setObjectName("label");
 
@@ -147,27 +176,21 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer);
 
-        pushButton_9 = new QPushButton(serverwidget);
-        pushButton_9->setObjectName("pushButton_9");
+        minBtn = new QPushButton(serverwidget);
+        minBtn->setObjectName("minBtn");
 
-        horizontalLayout_2->addWidget(pushButton_9);
+        horizontalLayout_2->addWidget(minBtn);
 
-        pushButton_10 = new QPushButton(serverwidget);
-        pushButton_10->setObjectName("pushButton_10");
+        closeBtn = new QPushButton(serverwidget);
+        closeBtn->setObjectName("closeBtn");
 
-        horizontalLayout_2->addWidget(pushButton_10);
+        horizontalLayout_2->addWidget(closeBtn);
 
 
         verticalLayout_2->addLayout(horizontalLayout_2);
 
         stackedWidget = new QStackedWidget(serverwidget);
         stackedWidget->setObjectName("stackedWidget");
-        page = new QWidget();
-        page->setObjectName("page");
-        stackedWidget->addWidget(page);
-        page_2 = new QWidget();
-        page_2->setObjectName("page_2");
-        stackedWidget->addWidget(page_2);
 
         verticalLayout_2->addWidget(stackedWidget);
 
@@ -183,17 +206,19 @@ public:
     void retranslateUi(QWidget *serverwidget)
     {
         serverwidget->setWindowTitle(QCoreApplication::translate("serverwidget", "Form", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_8->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        label->setText(QCoreApplication::translate("serverwidget", "TextLabel", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
-        pushButton_10->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        titleLabel->setText(QCoreApplication::translate("serverwidget", "Title", nullptr));
+        mainBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        userBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        settingBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        serviceBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        logBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        monitoringBtn->setText(QCoreApplication::translate("serverwidget", "PushButton", nullptr));
+        pushButton_4->setText(QString());
+        pushButton_5->setText(QString());
+        pushButton_6->setText(QString());
+        label->setText(QCoreApplication::translate("serverwidget", "\346\234\215\345\212\241\345\231\250\346\234\252\345\220\257\345\212\250", nullptr));
+        minBtn->setText(QString());
+        closeBtn->setText(QString());
     } // retranslateUi
 
 };

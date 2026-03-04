@@ -8,6 +8,8 @@
         <!-- 可选：全局QSS路径 -->
         <GlobalQssPath>qss/global_style.qss</GlobalQssPath>
         <SettingQssPath>qss/server_setting.qss</SettingQssPath>
+        <ServerMainQssPath>qss/server_main_widget.qss</ServerMainQssPath>
+        <ServerMainInfoQssPath>qss/server_main_stackwidget.qss</ServerMainInfoQssPath>
     </Style>
 
     <!-- 用户配置 -->

@@ -44,11 +44,13 @@ set(OLD_GLOB
   "D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "D:/QtPro/CSPro/client.cpp"
   "D:/QtPro/CSPro/csproject.cpp"
+  "D:/QtPro/CSPro/dashboardwidget.cpp"
   "D:/QtPro/CSPro/main.cpp"
   "D:/QtPro/CSPro/server.cpp"
   "D:/QtPro/CSPro/server_main.cpp"
   "D:/QtPro/CSPro/serversetting.cpp"
   "D:/QtPro/CSPro/serverwidget.cpp"
+  "D:/QtPro/CSPro/systemmonitor.cpp"
   "D:/QtPro/CSPro/tcpserver.cpp"
   "D:/QtPro/CSPro/xmlmanager.cpp"
   )
@@ -72,9 +74,11 @@ set(OLD_GLOB
   "D:/QtPro/CSPro/client.h"
   "D:/QtPro/CSPro/common.h"
   "D:/QtPro/CSPro/csproject.h"
+  "D:/QtPro/CSPro/dashboardwidget.h"
   "D:/QtPro/CSPro/server.h"
   "D:/QtPro/CSPro/serversetting.h"
   "D:/QtPro/CSPro/serverwidget.h"
+  "D:/QtPro/CSPro/systemmonitor.h"
   "D:/QtPro/CSPro/tcpserver.h"
   "D:/QtPro/CSPro/xmlmanager.h"
   )
@@ -179,6 +183,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/QtPro/CSPro/*.ui")
 set(OLD_GLOB
   "D:/QtPro/CSPro/csproject.ui"
+  "D:/QtPro/CSPro/dashboardwidget.ui"
   "D:/QtPro/CSPro/serversetting.ui"
   "D:/QtPro/CSPro/serverwidget.ui"
   )
