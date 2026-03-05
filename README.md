@@ -6,4 +6,4 @@ QT项目
 可以通讯也可以传图片之类的。
 练习用的，之前的完整版本找不到了，只有这个半残，主要用了xml，tcp，多线程等技术。
 有一些学习价值吧，后续会完善。
-https://github.com/Hlikias/csp/blob/main/demo/QQ_1772668802299.png?raw=true
+![主界面](https://github.com/Hlikias/csp/blob/main/demo/QQ_1772668802299.png?raw=true)
