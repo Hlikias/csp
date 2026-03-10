@@ -1,0 +1,545 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "FlotingWin/FlotingWinplugin.dll"
+		},
+		{
+			"path" : "FlotingWin/FlotingWinplugin.pdb"
+		}
+	],
+	"backtrace" : 6,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_plugin",
+			"qt6_add_qml_plugin",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"add_definitions",
+			"target_compile_definitions",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"FlotingWin/CMakeLists.txt",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+			"F:/qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"CMakeLists.txt",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"F:/qt/6.10.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1417,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 922,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 2656,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2686,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2893,
+				"parent" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2921,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2917,
+				"parent" : 3
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 14,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 315,
+				"parent" : 10
+			},
+			{
+				"file" : 9,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 40,
+				"parent" : 12
+			},
+			{
+				"file" : 8,
+				"parent" : 13
+			},
+			{
+				"command" : 11,
+				"file" : 8,
+				"line" : 50,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 142,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 16
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 333,
+				"parent" : 17
+			},
+			{
+				"file" : 4,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 55,
+				"parent" : 19
+			},
+			{
+				"file" : 3,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 61,
+				"parent" : 21
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 315,
+				"parent" : 10
+			},
+			{
+				"file" : 12,
+				"parent" : 23
+			},
+			{
+				"command" : 8,
+				"file" : 12,
+				"line" : 52,
+				"parent" : 24
+			},
+			{
+				"file" : 11,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 61,
+				"parent" : 26
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 315,
+				"parent" : 10
+			},
+			{
+				"file" : 16,
+				"parent" : 28
+			},
+			{
+				"command" : 8,
+				"file" : 16,
+				"line" : 40,
+				"parent" : 29
+			},
+			{
+				"file" : 15,
+				"parent" : 30
+			},
+			{
+				"command" : 11,
+				"file" : 15,
+				"line" : 50,
+				"parent" : 31
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 142,
+				"parent" : 32
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 33
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 333,
+				"parent" : 34
+			},
+			{
+				"file" : 14,
+				"parent" : 35
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 54,
+				"parent" : 36
+			},
+			{
+				"file" : 13,
+				"parent" : 37
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 61,
+				"parent" : 38
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 2770,
+				"parent" : 4
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 2910,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 40,
+					"define" : "FLOTINGWIN_LIBRARY"
+				},
+				{
+					"define" : "FlotingWinplugin_EXPORTS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 41,
+					"define" : "QT_DEPRECATED_WARNINGS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 41,
+					"define" : "QT_PLUGIN"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin"
+				},
+				{
+					"path" : "D:/QtPro/CSPro/FlotingWin"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWinplugin_autogen/include"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/include/QtQml"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/include"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "F:/qt/6.10.2/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					8,
+					8
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "FlotingWin::@62ef8ec79f80b25c33e9"
+		},
+		{
+			"id" : "FlotingWinplugin_autogen_timestamp_deps::@62ef8ec79f80b25c33e9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "FlotingWinplugin_autogen::@62ef8ec79f80b25c33e9"
+		}
+	],
+	"id" : "FlotingWinplugin::@62ef8ec79f80b25c33e9",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib\\libFlotingWin.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "F:\\qt\\6.10.2\\mingw_64\\lib\\libQt6Qml.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "F:\\qt\\6.10.2\\mingw_64\\lib\\libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "-lshell32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "F:\\qt\\6.10.2\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "-lmpr",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "-luserenv",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "FlotingWinplugin",
+	"nameOnDisk" : "FlotingWinplugin.dll",
+	"paths" : 
+	{
+		"build" : "FlotingWin",
+		"source" : "FlotingWin"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWinplugin_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWinplugin_FlotingWinPlugin.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWinplugin_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWinplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

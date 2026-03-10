@@ -1,0 +1,60 @@
+/* 启动按钮 */
+#btnStart {
+    background-color: #4CAF50;
+}
+#btnStart:hover {
+    background-color: #45a049;
+}
+#btnStart:pressed {
+    background-color: #3d8b40;
+}
+
+/* 重启按钮 */
+#rbtnRefresh {
+    background-color: #fb8c00;
+}
+#btnRefresh:hover {
+    background-color: #ff9800;      /* 橙色 */
+}
+#btnRefresh:pressed {
+    background-color: #f57c00;
+}
+
+/* 公共属性可提取（边框、圆角、字体等） */
+#btnStart, #btnRefresh {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    min-width: 80px;
+    min-height: 30px;
+}
+
+/* ---------- 所有 QLabel 的统一样式 ---------- */
+QLabel {
+    color: #333333;               /* 深灰色文字 */
+    font-size: 20px;               /* 字号 */
+    font-weight: normal;           /* 正常粗细 */
+    background-color: transparent; /* 透明背景，适应各种背景 */
+    padding: 2px 5px;              /* 少量内边距，避免文字紧贴边缘 */
+    border: none;                  /* 无边框 */
+}
+
+/* 可选：如果需要为标签添加边框或背景，可以取消下面注释调整 */
+/*
+QLabel {
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+*/
+
+QProgressBar { 
+    background-color: lightgray; 
+} 
+QProgressBar::chunk { 
+    background-color: green; 
+}

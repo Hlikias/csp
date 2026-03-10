@@ -1,0 +1,54 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "CSPro_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Common::@13b50f4fff9a3833e1fc"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "XmlManager::@205362ab14085e350d3c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "NetManager::@58d71015ec85ab9a05b0"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "FlotingWin::@62ef8ec79f80b25c33e9"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "CSPro_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "CSPro_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

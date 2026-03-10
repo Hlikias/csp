@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+    <User1>
+        <UserID>119498489</UserID>
+        <UserName>默认用户</UserName>
+        <QQNumber>8491151</QQNumber>
+        <Password>1232qwe2</Password>
+        <AutoLogin>false</AutoLogin>
+        <RememberPassword>false</RememberPassword>
+        <Theme>default</Theme>
+        <Language>zh_CN</Language>
+        <FontSize>12</FontSize>
+        <SaveHistory>true</SaveHistory>
+        <Hotkey>Ctrl+Alt+Z</Hotkey>
+        <LastLoginTime></LastLoginTime>
+    </User1>
+    <User2>
+        <UserID>119498484</UserID>
+        <UserName>默认用户</UserName>
+        <QQNumber>1489141</QQNumber>
+        <Password>118231182</Password>
+        <AutoLogin>true</AutoLogin>
+        <RememberPassword>true</RememberPassword>
+        <Theme>default</Theme>
+        <Language>zh_CN</Language>
+        <FontSize>12</FontSize>
+        <SaveHistory>true</SaveHistory>
+        <Hotkey>Ctrl+Alt+Z</Hotkey>
+        <LastLoginTime></LastLoginTime>
+    </User2>
+</UserConfig>

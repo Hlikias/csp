@@ -1,0 +1,9 @@
+module FlotingWin
+linktarget FlotingWinplugin
+optional plugin FlotingWinplugin
+classname FlotingWinPlugin
+typeinfo FlotingWin.qmltypes
+prefer :/qt/qml/FlotingWin/
+Main 1.0 Main.qml
+depends QtQuick
+

@@ -1,0 +1,14 @@
+--bare
+-I
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
+-I
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin
+-I
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin
+-I
+F:/qt/6.10.2/mingw_64/qml
+--resource
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/qmake_FlotingWin.qrc
+--resource
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/FlotingWin_raw_qml_0.qrc
+D:/QtPro/CSPro/FlotingWin/Main.qml

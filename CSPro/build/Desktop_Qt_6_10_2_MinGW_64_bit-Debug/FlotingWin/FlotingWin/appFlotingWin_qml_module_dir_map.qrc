@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/FlotingWin">D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWin</file>
+
+  </qresource>
+</RCC>

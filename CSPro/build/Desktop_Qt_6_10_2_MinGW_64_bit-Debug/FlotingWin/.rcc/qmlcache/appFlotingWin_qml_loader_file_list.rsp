@@ -1,0 +1,5 @@
+--resource
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/qmake_FlotingWin.qrc
+--resource
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/appFlotingWin_raw_qml_0.qrc
+/qt/qml/FlotingWin/Main.qml

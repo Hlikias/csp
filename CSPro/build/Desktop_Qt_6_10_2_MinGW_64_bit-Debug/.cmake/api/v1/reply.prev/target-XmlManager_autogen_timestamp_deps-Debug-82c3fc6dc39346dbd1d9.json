@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"XmlManager/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "XmlManager_autogen_timestamp_deps::@205362ab14085e350d3c",
+	"isGeneratorProvided" : true,
+	"name" : "XmlManager_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "XmlManager",
+		"source" : "XmlManager"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

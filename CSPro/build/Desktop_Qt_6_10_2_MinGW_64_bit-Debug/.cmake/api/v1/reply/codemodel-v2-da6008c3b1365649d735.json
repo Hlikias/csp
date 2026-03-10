@@ -1,0 +1,474 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f680e2cce6d949f182f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						26,
+						31,
+						32
+					]
+				},
+				{
+					"build" : "Common",
+					"jsonFile" : "directory-Common-Debug-93d5e0f2d095a202fb49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Common",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "NetManager",
+					"jsonFile" : "directory-NetManager-Debug-8bfe83aaf8b28db41a52.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "NetManager",
+					"targetIndexes" : 
+					[
+						20,
+						21,
+						22
+					]
+				},
+				{
+					"build" : "XmlManager",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-XmlManager-Debug-2c08ebecd96ba3e307ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "XmlManager",
+					"targetIndexes" : 
+					[
+						23,
+						24,
+						25
+					]
+				},
+				{
+					"build" : "FlotingWin",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-FlotingWin-Debug-d65f072aef9e493d320a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "FlotingWin",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						27,
+						28,
+						29,
+						30,
+						33
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CSPro",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						26,
+						31,
+						32
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Common",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "NetManager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						20,
+						21,
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "XmlManager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						23,
+						24,
+						25
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "FlotingWin",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						27,
+						28,
+						29,
+						30,
+						33
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CSPro::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CSPro-Debug-31fb2005cd382560a4e8.json",
+					"name" : "CSPro",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CSPro_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CSPro_autogen-Debug-b100a4fa57859de8d81f.json",
+					"name" : "CSPro_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CSPro_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CSPro_autogen_timestamp_deps-Debug-c392f270bf6fd6099374.json",
+					"name" : "CSPro_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CSPro_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CSPro_qmlimportscan-Debug-5d1f9c30c4e21b0f7cf2.json",
+					"name" : "CSPro_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Common::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common-Debug-cee65c970feb024a905a.json",
+					"name" : "Common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Common_autogen::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common_autogen-Debug-87797e45378cb27683fa.json",
+					"name" : "Common_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Common_autogen_timestamp_deps::@13b50f4fff9a3833e1fc",
+					"jsonFile" : "target-Common_autogen_timestamp_deps-Debug-bdefe79f51cce527f075.json",
+					"name" : "Common_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin-Debug-4ec803f2873a4ce46946.json",
+					"name" : "FlotingWin",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_autogen::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_autogen-Debug-e9111b302fe3c52461f4.json",
+					"name" : "FlotingWin_autogen",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_autogen_timestamp_deps::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_autogen_timestamp_deps-Debug-7e8ac9c3e71fe8daf07b.json",
+					"name" : "FlotingWin_autogen_timestamp_deps",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_copy_qml::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_copy_qml-Debug-86fc536b5faa8082bcee.json",
+					"name" : "FlotingWin_copy_qml",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_copy_res::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_copy_res-Debug-fc3c408007146241ee6b.json",
+					"name" : "FlotingWin_copy_res",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_other_files::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_other_files-Debug-07ef3cca260cfb63a93d.json",
+					"name" : "FlotingWin_other_files",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_qmllint::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_qmllint-Debug-c646375664cbc04cb77d.json",
+					"name" : "FlotingWin_qmllint",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_qmllint_json::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_qmllint_json-Debug-ad6c84b19f122ba8ecb8.json",
+					"name" : "FlotingWin_qmllint_json",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_qmllint_module::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_qmllint_module-Debug-a0b4311420ef3fdf941f.json",
+					"name" : "FlotingWin_qmllint_module",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWin_qmltyperegistration::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWin_qmltyperegistration-Debug-ccd8d8298b0481c473cf.json",
+					"name" : "FlotingWin_qmltyperegistration",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWinplugin::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWinplugin-Debug-48a16a865041448c1613.json",
+					"name" : "FlotingWinplugin",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWinplugin_autogen::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWinplugin_autogen-Debug-cfd47a760237b228987e.json",
+					"name" : "FlotingWinplugin_autogen",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FlotingWinplugin_autogen_timestamp_deps::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-FlotingWinplugin_autogen_timestamp_deps-Debug-20e75a4dc91ad3e7bdf7.json",
+					"name" : "FlotingWinplugin_autogen_timestamp_deps",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "NetManager::@58d71015ec85ab9a05b0",
+					"jsonFile" : "target-NetManager-Debug-55fa63f70dbe0b42cd80.json",
+					"name" : "NetManager",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "NetManager_autogen::@58d71015ec85ab9a05b0",
+					"jsonFile" : "target-NetManager_autogen-Debug-24fd2090b2b5415694c2.json",
+					"name" : "NetManager_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "NetManager_autogen_timestamp_deps::@58d71015ec85ab9a05b0",
+					"jsonFile" : "target-NetManager_autogen_timestamp_deps-Debug-22b2df1fdae1316ec9c4.json",
+					"name" : "NetManager_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "XmlManager::@205362ab14085e350d3c",
+					"jsonFile" : "target-XmlManager-Debug-bb683826753885b56648.json",
+					"name" : "XmlManager",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "XmlManager_autogen::@205362ab14085e350d3c",
+					"jsonFile" : "target-XmlManager_autogen-Debug-cdb3f41db6b0f68dc28a.json",
+					"name" : "XmlManager_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "XmlManager_autogen_timestamp_deps::@205362ab14085e350d3c",
+					"jsonFile" : "target-XmlManager_autogen_timestamp_deps-Debug-82c3fc6dc39346dbd1d9.json",
+					"name" : "XmlManager_autogen_timestamp_deps",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-a0a0f39d78bb88a80fde.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "all_qmllint::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-all_qmllint-Debug-5198cac611f8163ba6df.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "all_qmllint_json::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-all_qmllint_json-Debug-de9d65f40868a2b2954f.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "all_qmllint_module::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-all_qmllint_module-Debug-bf9ace8f50a71ed97def.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "all_qmltyperegistrations::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-5ae12285c11cf509cc2b.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-2ec191ffd19669817a63.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_FlotingWin_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_FlotingWin_aotstats_target-Debug-43d708682d72ff0fd31e.json",
+					"name" : "module_FlotingWin_aotstats_target",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "qt_internal_plugins::@62ef8ec79f80b25c33e9",
+					"jsonFile" : "target-qt_internal_plugins-Debug-f48778f05303a46c50e9.json",
+					"name" : "qt_internal_plugins",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+		"source" : "D:/QtPro/CSPro"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

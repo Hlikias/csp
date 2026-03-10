@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/FlotingWin/">
+    <file alias="Main.qml">D:/QtPro/CSPro/FlotingWin/Main.qml</file>
+  </qresource>
+</RCC>
+

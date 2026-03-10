@@ -1,0 +1,258 @@
+/* ==================== QLabel 样式 ==================== */
+#label, #label_1,#label_2,#label_3,#label_4,#label_5,#label_6,#label_7,#label_8,#label_9,#label_10,#label_11,#label_12,#label_13,#label_14,#label_15,#label_16,#label_17{
+    background: transparent;      /* 透明背景，适应父容器 */
+    color: #2c2c2c;
+    padding: 2px 4px;
+    selection-background-color: #d6e9ff; /* 选中文字时的背景色 */
+}
+#logPath{
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-right: none;                /* 去掉右边框 */
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 5px 8px;
+    selection-background-color: #d6e9ff;
+}
+/* ==================== QLineEdit 样式 ==================== */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    padding: 5px 8px;
+    selection-background-color: #d6e9ff;
+    border-right: none;
+}
+
+QLineEdit:hover {
+    border: 1px solid #b0b0b0;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3b8cff;
+    outline: none;               /* 去掉默认的焦点虚线框 */
+}
+
+QLineEdit:disabled {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    color: #a0a0a0;
+}
+
+QPushButton { 
+    background-color: #f0f0f0;
+    border: 1px solid #d2d2d2;
+    border-left: none;                 /* 去掉左边框 */
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 6px 4px;     /* 左右内边距减小 */
+    min-width: 15px;                   /* 固定宽度 */
+    color: #333333;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;         /* 悬停效果 */
+}
+
+/* ==================== QComboBox 样式 ==================== */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    padding: 4px 8px 4px 8px;    /* 左内边距为文字留空间，右边留给下拉按钮 */
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border: 1px solid #b0b0b0;
+}
+
+QComboBox:focus {
+    border: 1px solid #3b8cff;
+}
+
+QComboBox:on {                    /* 下拉列表弹出时的状态 */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 22px;                  /* 下拉按钮宽度 */
+    border-left: 1px solid #d2d2d2;
+    background-color: transparent;
+}
+
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><polygon points='3,4 9,4 6,8' fill='%23666666'/></svg>");
+}
+
+QComboBox::down-arrow:hover {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><polygon points='3,4 9,4 6,8' fill='%233b8cff'/></svg>");
+}
+
+/* 下拉列表视图 */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-top: none;             /* 与组合框无缝连接 */
+    selection-background-color: #d6e9ff;
+    selection-color: #2c2c2c;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 6px 8px;
+    min-height: 22px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #e5f0ff;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #d6e9ff;
+}
+
+/* ==================== QCheckBox 样式 ==================== */
+QCheckBox {
+    spacing: 6px;                 /* 指示器与文字间距 */
+    background: transparent;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 1px solid #b0b0b0;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #3b8cff;
+    border: 1px solid #3b8cff;
+    /* 内嵌 SVG 白色勾，无需外部图片 */
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><polyline points='4,8 7,11 12,4' stroke='%23FFFFFF' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+QCheckBox::indicator:checked:hover {
+    background-color: #1a6eff;
+    border: 1px solid #1a6eff;
+}
+
+QCheckBox::indicator:indeterminate {
+    background-color: #e0e0e0;
+    border: 1px solid #b0b0b0;
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><rect x='4' y='7' width='8' height='2' fill='%23666666'/></svg>");
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+}
+
+QCheckBox::indicator:checked:disabled {
+    background-color: #c0c0c0;
+    border: 1px solid #c0c0c0;
+}
+
+QCheckBox:disabled {
+    color: #a0a0a0;
+}
+
+/* ==================== QSpinBox 样式 ==================== */
+QSpinBox {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    padding: 4px 20px 4px 8px;    /* 右侧留出按钮空间 */
+    min-height: 20px;
+}
+
+QSpinBox:hover {
+    border: 1px solid #b0b0b0;
+}
+
+QSpinBox:focus {
+    border: 1px solid #3b8cff;
+}
+
+QSpinBox:disabled {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    color: #a0a0a0;
+}
+
+/* 上下按钮公共样式 */
+QSpinBox::up-button, QSpinBox::down-button {
+    subcontrol-origin: padding;
+    width: 20px;
+    background-color: #fafafa;
+    border-left: 1px solid #d2d2d2;
+}
+
+QSpinBox::up-button {
+    subcontrol-position: top right;
+    border-bottom: 1px solid #d2d2d2;
+    border-top-right-radius: 2px;
+}
+
+QSpinBox::down-button {
+    subcontrol-position: bottom right;
+    border-bottom-right-radius: 2px;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #f0f0f0;
+}
+
+QSpinBox::up-button:pressed, QSpinBox::down-button:pressed {
+    background-color: #e0e0e0;
+}
+
+QSpinBox::up-button:disabled, QSpinBox::down-button:disabled {
+    background-color: #f5f5f5;
+    border-left-color: #e0e0e0;
+}
+
+/* 向上箭头（内嵌 SVG 三角形） */
+QSpinBox::up-arrow {
+    width: 10px;
+    height: 10px;
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,6 5,2 8,6' fill='%23666666'/></svg>");
+}
+
+QSpinBox::up-arrow:hover {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,6 5,2 8,6' fill='%233b8cff'/></svg>");
+}
+
+QSpinBox::up-arrow:disabled {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,6 5,2 8,6' fill='%23c0c0c0'/></svg>");
+}
+
+/* 向下箭头 */
+QSpinBox::down-arrow {
+    width: 10px;
+    height: 10px;
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,4 5,8 8,4' fill='%23666666'/></svg>");
+}
+
+QSpinBox::down-arrow:hover {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,4 5,8 8,4' fill='%233b8cff'/></svg>");
+}
+
+QSpinBox::down-arrow:disabled {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,4 5,8 8,4' fill='%23c0c0c0'/></svg>");
+}
+
+/* 确保焦点状态时上下按钮边框与整体协调 */
+QSpinBox:focus::up-button, QSpinBox:focus::down-button {
+    border-left-color: #3b8cff;
+}

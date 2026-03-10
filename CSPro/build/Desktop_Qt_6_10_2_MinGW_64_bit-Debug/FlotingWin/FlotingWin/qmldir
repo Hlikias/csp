@@ -1,0 +1,6 @@
+module FlotingWin
+typeinfo appFlotingWin.qmltypes
+prefer :/qt/qml/FlotingWin/
+Main 254.0 Main.qml
+depends QtQuick
+

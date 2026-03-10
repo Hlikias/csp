@@ -1,0 +1,42 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"NetManager/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Common::@13b50f4fff9a3833e1fc"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "XmlManager::@205362ab14085e350d3c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "NetManager_autogen_timestamp_deps::@58d71015ec85ab9a05b0",
+	"isGeneratorProvided" : true,
+	"name" : "NetManager_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "NetManager",
+		"source" : "NetManager"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

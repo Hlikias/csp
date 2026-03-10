@@ -1,0 +1,14 @@
+-rootPath
+D:/QtPro/CSPro/FlotingWin
+-cmake-output
+-output-file
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/qml_imports/appFlotingWin_conf.cmake
+-importPath
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin
+-importPath
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/FlotingWin
+-importPath
+F:/qt/6.10.2/mingw_64/qml
+-qrcFiles
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/qmake_FlotingWin.qrc
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FlotingWin/.qt/rcc/appFlotingWin_raw_qml_0.qrc

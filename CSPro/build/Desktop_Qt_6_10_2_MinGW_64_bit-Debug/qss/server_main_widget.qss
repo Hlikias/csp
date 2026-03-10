@@ -1,0 +1,86 @@
+/* 基础样式 */
+#serverwidget {
+    /* 渐变背景（模拟QQ的淡蓝渐变） */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                                stop:0 #E8F4FF, stop:1 #D1E9FF);
+    /* 去掉窗口边框（可选，模拟QQ无边框） */
+    border: none;
+    border-radius: 5px;
+}
+#mainBtn, #logBtn, #monitoringBtn, #serviceBtn, #settingBtn, #userBtn {
+    background-color: #a0c4ff;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 100px;
+    min-height: 40px;
+}
+
+/* 悬停效果 */
+#mainBtn:hover,
+#logBtn:hover,
+#monitoringBtn:hover,
+#serviceBtn:hover,
+#settingBtn:hover,
+#userBtn:hover {
+    background-color: #7aa9ff;
+}
+
+/* 按下效果 */
+#mainBtn:pressed,
+#logBtn:pressed,
+#monitoringBtn:pressed,
+#serviceBtn:pressed,
+#settingBtn:pressed,
+#userBtn:pressed {
+    background-color: #4d8cff;
+}
+
+/* 选中效果（仅当按钮 checkable 且被勾选时） */
+#mainBtn:checked,
+#logBtn:checked,
+#monitoringBtn:checked,
+#serviceBtn:checked,
+#settingBtn:checked,
+#userBtn:checked {
+    background-color: #4d8cff;
+    border: 2px solid white;
+}
+/* 基础样式：两个按钮共享 */
+#minBtn, #closeBtn {
+    background-color: #a0c4ff;   /* 透明背景 */
+    border: none;                    /* 无边框 */
+    border-radius: 15px;             /* 圆形，假设按钮 30x30 */
+    color: #666;                     /* 图标颜色 */
+    font-size: 20px;                 /* 图标大小 */
+    font-weight: bold;               /* 加粗 */
+    width: 30px;
+    height: 30px;
+}
+
+/* 悬停效果（通用） */
+#minBtn:hover, #closeBtn:hover {
+    background-color: #e0e0e0;       /* 浅灰色背景 */
+    color: #000;                     /* 图标变深 */
+}
+
+/* 按下效果（通用） */
+#minBtn:pressed, #closeBtn:pressed {
+    background-color: #c0c0c0;       /* 更深的灰色 */
+    color: #000;
+}
+
+/* 关闭按钮特殊悬停：红色背景 */
+#closeBtn:hover {
+    background-color: #ff5f57;       /* macOS 风格红色 */
+    color: white;                     /* 图标变白 */
+}
+
+/* 关闭按钮按下效果 */
+#closeBtn:pressed {
+    background-color: #bf4c4c;       /* 更深的红色 */
+    color: white;
+}

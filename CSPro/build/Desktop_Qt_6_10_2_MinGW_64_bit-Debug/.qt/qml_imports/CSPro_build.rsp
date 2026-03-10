@@ -1,0 +1,9 @@
+-rootPath
+D:/QtPro/CSPro
+-cmake-output
+-output-file
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/qml_imports/CSPro_build.cmake
+-importPath
+D:/QtPro/CSPro/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
+-importPath
+F:/qt/6.10.2/mingw_64/qml

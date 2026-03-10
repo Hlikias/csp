@@ -1,0 +1,31 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Common/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Common_autogen_timestamp_deps::@13b50f4fff9a3833e1fc",
+	"isGeneratorProvided" : true,
+	"name" : "Common_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Common",
+		"source" : "Common"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

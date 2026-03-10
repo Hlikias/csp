@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+    <!-- 样式配置 -->
+    <Style>
+        <!-- QSS文件路径：支持绝对路径/资源路径 -->
+        <LoginQssPath>:/qss/login_style.qss</LoginQssPath>
+        <MainQssPath>:/qss/main_style.qss</MainQssPath>
+        <!-- 可选：全局QSS路径 -->
+        <GlobalQssPath>:/qss/global_style.qss</GlobalQssPath>
+    </Style>
+
+    <!-- 用户配置 -->
+    <User>
+        <QQNumber>123456789</QQNumber>
+        <Username>测试用户</Username>
+        <AutoLogin>true</AutoLogin>
+        <RememberPwd>true</RememberPwd>
+        <AvatarPath>:/images/avatar.png</AvatarPath>
+    </User>
+
+    <!-- 软件基础配置 -->
+    <App>
+        <WindowWidth>400</WindowWidth>
+        <WindowHeight>550</WindowHeight>
+        <Title>QQ登录界面</Title>
+        <AutoStart>false</AutoStart>
+        <Language>zh_CN</Language>
+    </App>
+</AppConfig>

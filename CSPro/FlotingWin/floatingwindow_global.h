@@ -1,0 +1,12 @@
+#ifndef FLOATINGWINDOW_GLOBAL_H
+#define FLOATINGWINDOW_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FLOTINGWIN_LIBRARY)
+#  define FLOTINGWIN_EXPORT Q_DECL_EXPORT
+#else
+#  define FLOTINGWIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FLOATINGWINDOW_GLOBAL_H
